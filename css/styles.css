@@ -13,13 +13,14 @@ body {
 }
 
 .logo {
+  display: inline-block;
+
   color: #000000;
   font-family: Raleway, sans-serif;
   font-size: 26px;
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
   text-decoration: none;
-  display: inline-block;
 }
 
 .logo .logo-blue {
@@ -27,12 +28,30 @@ body {
 }
 
 .list {
-  list-style: none;
   margin: 0;
   padding: 0;
+
+  list-style: none;
+}
+
+.container-top-line {
+  display: flex;
+  align-items: center;
+}
+
+.menu-nav {
+  display: flex;
+}
+
+.menu-nav .menu-nav-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .menu-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--primari-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -50,7 +69,18 @@ body {
   color: var(--accent-color);
 }
 
+.contact {
+  display: flex;
+}
+
+.contact .contact-item + .contact-item {
+  margin-left: 50px;
+}
 .contact .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -65,19 +95,21 @@ body {
 }
 
 .business {
-  background-color: #2f303a;
   padding-bottom: 200px;
   padding-top: 200px;
+
+  background-color: #2f303a;
 }
 
 .hero-title {
+  margin: 0 452px 30px;
+
   color: var(--text-white);
   font-weight: 900;
   font-size: 44px;
   line-height: calc(60 / 44);
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  margin: 0 452px 30px;
   align-items: center;
   text-align: center;
 }
@@ -101,32 +133,35 @@ body {
 }
 
 .features-list .title {
+  margin-top: 0;
+  margin-bottom: 10px;
+
   color: var(--primari-text-color);
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 10px;
 }
 
 .features-list .title-text {
+  margin-top: 0;
+  margin-bottom: 0;
+
   color: var(--title-text-color);
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
-  margin-top: 0;
-  margin-bottom: 0;
 }
 
 .our-work-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+
   color: var(--primari-text-color);
   font-size: 36px;
   line-height: calc(42 / 36);
   text-align: center;
   letter-spacing: 0.03em;
-  margin-top: 0;
-  margin-bottom: 50px;
 }
 
 .our-teams {
@@ -135,37 +170,45 @@ body {
 }
 
 .our-teams-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+
   color: var(--primari-text-color);
   font-size: 36px;
   line-height: calc(42 / 36);
   text-align: center;
   letter-spacing: 0.03em;
-  margin-top: 0;
-  margin-bottom: 50px;
 }
 
 .teams .title {
+  margin-top: 0;
+  margin-bottom: 10px;
+
   color: var(--primari-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: calc(19 / 16);
   text-align: center;
   letter-spacing: 0.03em;
-  margin-top: 0;
-  margin-bottom: 10px;
 }
 
 .teams .text {
+  margin-top: 0;
+  margin-bottom: 30px;
+
   color: var(--title-text-color);
   font-size: 16px;
   line-height: calc(19 / 16);
   text-align: center;
   letter-spacing: 0.03em;
-  margin-top: 0;
-  margin-bottom: 30px;
 }
 
 .btn-primary {
+  padding: 10px 32px;
+  min-width: 216px;
+  border: none;
+  margin: 0 auto;
+
   background-color: var(--accent-color);
   color: var(--text-white);
   font-family: inherit;
@@ -179,10 +222,6 @@ body {
   cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  padding: 10px 32px;
-  min-width: 216px;
-  border: none;
-  margin: 0 auto;
 }
 
 .btn-primary:hover,
@@ -191,13 +230,14 @@ body {
 }
 
 .footer .text {
+  margin-top: 0;
+  margin-bottom: 0;
+
   color: var(--text-white);
   font-style: normal;
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
-  margin-top: 0;
-  margin-bottom: 0;
 }
 
 .footer .link {
@@ -215,11 +255,13 @@ body {
 }
 
 .footer .logo {
-  color: #ffffff;
   margin-bottom: 20px;
+  color: #ffffff;
 }
 
 .filter .btn {
+  padding: 6px 22px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: calc(26 / 16);
@@ -227,8 +269,7 @@ body {
   letter-spacing: 0.03em;
   cursor: pointer;
   border-radius: 4px;
-  padding: 6px 22px;
-  border: transparent;
+  border: none;
 }
 
 .filter .btn:hover,
