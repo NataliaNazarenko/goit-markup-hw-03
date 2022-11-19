@@ -14,7 +14,6 @@ body {
 
 .logo {
   display: inline-block;
-  margin-right: 93px;
 
   color: #000000;
   font-family: Raleway, sans-serif;
@@ -52,6 +51,7 @@ img {
 
 .menu-nav {
   display: flex;
+  margin-left: 93px;
 }
 
 .menu-nav .menu-nav-item:not(:last-child) {
