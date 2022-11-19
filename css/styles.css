@@ -389,9 +389,6 @@ img {
   text-decoration: none;
 }
 
-.project-item {
-}
-
 .project-item:nth-child(3n) {
   margin-right: 0;
 }
@@ -413,7 +410,7 @@ img {
   padding: 20px 24px;
 
   background: #ffffff;
-  border: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
 
 .project-item .title-text {
