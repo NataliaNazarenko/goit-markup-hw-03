@@ -148,7 +148,7 @@ img {
 .features-list {
   display: flex;
   align-items: flex-start;
-  flex-basis: calc ((100% - 90px) / 4);
+  flex-basis: calc((100% - 90px) / 4);
   margin-right: 30px;
 }
 
@@ -213,8 +213,6 @@ img {
 }
 
 .our-teams {
-  padding-bottom: 94px;
-
   background-color: #f5f4fa;
 }
 
@@ -233,13 +231,8 @@ img {
 
 .teams {
   display: flex;
-  flex-basis: calc ((100% - 90px) / 4);
+  flex-basis: calc((100% - 90px) / 4);
   padding-bottom: 94px;
-}
-
-.teams-item {
-  width: 270px;
-  height: 260px;
 }
 
 .teams-item:not(:last-child) {
@@ -247,13 +240,14 @@ img {
 }
 
 .teams-item-description {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin: 0;
+
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  margin: 0;
 }
 
 .teams-item .blok {
@@ -411,10 +405,13 @@ img {
 
   background: #ffffff;
   border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
 }
 
 .project-item .title-text {
   margin: 0;
+
   color: var(--title-text-color);
   font-size: 16px;
   line-height: calc(30 / 16);
